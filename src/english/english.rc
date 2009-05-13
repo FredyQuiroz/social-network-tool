@@ -1,0 +1,1013 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Template.ico"
+IDR_TemplateTYPE        ICON                    "res\\TemplateDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "Import",                      ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Print\tCtrl+P",              57607
+        MENUITEM "Print p&review ",             57609
+        MENUITEM "Pa&ge setup",                 57606
+        MENUITEM SEPARATOR
+        MENUITEM "&Administrator",              ID_ARCHIVO_ADMINISTRADOR
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Exit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Statusbar",                  ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Browser\tF2",                136
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Servers",                    ID_CONFIGURACION_SERVIDORES
+        MENUITEM SEPARATOR
+        MENUITEM "S&panish",                    ID_HERRAMIENTAS_ESPA32771
+        MENUITEM "&German",                     ID_HERRAMIENTAS_GERMAN
+        MENUITEM "E&nglish",                    ID_HERRAMIENTAS_ENGLISH
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Help\tF1",                    ID_HELP_INDEX
+        MENUITEM SEPARATOR
+        MENUITEM "&About Social Network Tool...", ID_APP_ABOUT
+    END
+END
+
+IDR_TemplateTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "Import",                      ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Print\tCtrl+P",              57607
+        MENUITEM "Print p&review",              57609
+        MENUITEM "Page set&up",                 57606
+        MENUITEM SEPARATOR
+        MENUITEM "&Administrator",              ID_ARCHIVO_ADMINISTRADOR
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Exit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Statusbar",                  ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Browser\tF2",                136
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Servers",                    142
+        MENUITEM SEPARATOR
+        MENUITEM "S&panish",                    ID_HERRAMIENTAS_ESPA32771
+        MENUITEM "&German",                     ID_HERRAMIENTAS_GERMAN
+        MENUITEM "E&nglish",                    ID_HERRAMIENTAS_ENGLISH
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Mosaic",                     ID_WINDOW_TILE_HORZ
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Help\tF1",                    ID_HELP_INDEX
+        MENUITEM SEPARATOR
+        MENUITEM "&About Social Network Tool ...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_F1,          ID_HELP_INDEX,          VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,8,1,1
+ PRODUCTVERSION 1,8,1,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0a04e4"
+        BEGIN
+            VALUE "CompanyName", "SDG"
+            VALUE "FileDescription", "Social Network Tool"
+            VALUE "FileVersion", "1.8.1.1"
+            VALUE "InternalName", "Template.exe"
+            VALUE "LegalCopyright", "SDG 2007 (c) . Reservados todos los derechos."
+            VALUE "OriginalFilename", "Template.exe"
+            VALUE "ProductName", "Social Network Tool"
+            VALUE "ProductVersion", "1.8.1.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc0a, 1252
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Colombia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESO)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_COLOMBIA
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESO)\r\n"
+    "LANGUAGE 10, 9\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Template.rc2""  // recursos editados que no son de Microsoft Visual C++\r\n"
+    "#include ""afxres.rc""         // Componentes estándar\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BLOADING11          BITMAP                  "res\\loading\\loading0011.bmp"
+IDB_BLOADING1           BITMAP                  "res\\loading\\loading0001.bmp"
+IDB_BLOADING2           BITMAP                  "res\\loading\\loading0002.bmp"
+IDB_BLOADING3           BITMAP                  "res\\loading\\loading0003.bmp"
+IDB_BLOADING4           BITMAP                  "res\\loading\\loading0004.bmp"
+IDB_BLOADING5           BITMAP                  "res\\loading\\loading0005.bmp"
+IDB_BLOADING6           BITMAP                  "res\\loading\\loading0006.bmp"
+IDB_BLOADING7           BITMAP                  "res\\loading\\loading0007.bmp"
+IDB_BLOADING8           BITMAP                  "res\\loading\\loading0008.bmp"
+IDB_BLOADING9           BITMAP                  "res\\loading\\loading0009.bmp"
+IDB_BLOADING10          BITMAP                  "res\\loading\\loading0010.bmp"
+IDB_BASISTENTE          BITMAP                  "res\\asistente.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 86
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Social Network Tool"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    RTEXT           "Version 1.0",IDC_SVERSION,139,20,89,8,SS_NOPREFIX
+    RTEXT           "Copyright (C) 2007",IDC_STATIC,139,34,89,8
+    DEFPUSHBUTTON   "OK",IDOK,178,63,50,16,WS_GROUP
+    LTEXT           "Programmed by SDG LTDA. All Rights Reserved.",IDC_SLINKEX,35,49,193,8
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,20,20
+    RTEXT           "SDG LTDA. Social Network Tool.",IDC_STATIC,93,7,135,8
+END
+
+IDD_TEMPLATE_FORM DIALOGEX 0, 0, 265, 194
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EPKZ,72,17,73,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ENOMBRES,72,33,73,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EAPELLIDO,72,49,73,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ESAPELLIDO,72,65,73,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ETITULO,72,81,73,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DNACIMIENTO,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,72,97,73,15
+    COMBOBOX        IDC_CSEXO,72,114,73,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ENACIONALIDAD,72,128,73,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CORRESPONDENCIA,72,144,73,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Deceased",IDC_CFALLECIDO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,164,43,10
+    PUSHBUTTON      "&OK",IDC_BACEPTAR,208,173,50,14
+    PUSHBUTTON      "&Clear",IDC_BCANCELAR,153,173,50,14
+    LTEXT           "PKZ",IDC_STATIC,7,19,13,8
+    LTEXT           "Academic Title",IDC_STATIC,7,84,58,8
+    LTEXT           "Names",IDC_STATIC,7,35,29,8
+    LTEXT           "Second Surname",IDC_STATIC,7,67,65,8
+    LTEXT           "First Surname",IDC_STATIC,7,51,59,8
+    LTEXT           "Date of Birth",IDC_STATIC,7,100,66,8
+    LTEXT           "Gender",IDC_STATIC,7,116,33,8
+    LTEXT           "Nationality",IDC_STATIC,7,131,41,8
+    LTEXT           "Preferred Address",IDC_STATIC,7,147,77,8
+    LTEXT           "",IDC_SANOS,157,101,101,8
+    CTEXT           "Deceased",IDC_SFALLECIDO,7,7,251,13
+END
+
+IDD_RESIDENCIAVIEW DIALOGEX 0, 0, 275, 262
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EPKZ1,72,15,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EPAIS,72,32,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDEPARTAMENTO,72,49,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ECIUDAD,72,66,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIRECCION,72,83,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ECPOSTAL,72,100,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EAAEREO,72,117,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ETELEFONO,72,134,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMOVIL,72,151,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EFAX,72,168,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EEMAIL,72,185,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EEMAIL2,72,201,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EWEBSITE,72,217,93,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDC_BOK,218,241,50,14
+    PUSHBUTTON      "Cancel",IDC_BCANCEL,165,241,50,14
+    LTEXT           "Country",IDC_STATIC,7,35,27,8
+    LTEXT           "State/Province",IDC_STATIC,7,52,52,8
+    LTEXT           "City",IDC_STATIC,7,68,23,8
+    LTEXT           "Address",IDC_STATIC,7,86,34,8
+    LTEXT           "ZIP Code",IDC_STATIC,7,104,44,8
+    LTEXT           "P.O. Box",IDC_STATIC,7,120,52,8
+    LTEXT           "Phone",IDC_STATIC,7,137,29,8
+    LTEXT           "Fax",IDC_STATIC,7,171,13,8
+    LTEXT           "E-Mail",IDC_STATIC,7,188,40,8
+    LTEXT           "Website",IDC_STATIC,7,220,27,8
+    LTEXT           "PKZ",IDC_STATIC,7,15,23,8
+    LTEXT           "E-Mail 2",IDC_STATIC,7,204,42,8
+    LTEXT           "Mobile Phone",IDC_STATIC,7,154,47,8
+    CTEXT           "Deceased",IDC_SFALLECIDO,7,242,103,13
+END
+
+IDD_OFICINAVIEW DIALOGEX 0, 0, 259, 275
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EPKZ1,67,18,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ENOMBRE,67,34,111,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CTIPO,67,49,111,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ECARGO,67,64,111,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EPAIS,67,80,111,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDEPARTAMENTO1,67,96,111,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ECIUDAD1,67,112,111,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIRECCION,67,128,111,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ECPOSTAL,67,144,111,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EAAEREO,67,160,111,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ETELEFONO,67,176,111,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EFAX,67,192,111,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EEMAIL,67,208,111,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EWEBSITE,67,224,111,14,ES_AUTOHSCROLL
+    CONTROL         "Retired",IDC_CJUBILADO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,242,70,10
+    PUSHBUTTON      "Clear",IDC_BCANCEL,145,254,50,14
+    DEFPUSHBUTTON   "OK",IDC_BOK,202,254,50,14
+    LTEXT           "Country",IDC_STATIC,6,81,29,8
+    LTEXT           "State/Province",IDC_STATIC,6,97,55,8
+    LTEXT           "City",IDC_STATIC,6,113,23,8
+    LTEXT           "Address",IDC_STATIC,6,130,34,8
+    LTEXT           "ZIP Code",IDC_STATIC,6,145,44,8
+    LTEXT           "P.O. Box",IDC_STATIC,6,161,52,8
+    LTEXT           "Phone",IDC_STATIC,6,177,29,8
+    LTEXT           "Fax",IDC_STATIC,6,193,13,8
+    LTEXT           "Email",IDC_STATIC,6,210,17,8
+    LTEXT           "Website",IDC_STATIC,6,226,27,8
+    LTEXT           "PKZ",IDC_STATIC,6,19,23,8
+    LTEXT           "Institution",IDC_STATIC,6,35,33,8
+    LTEXT           "Position",IDC_STATIC,6,65,48,8
+    CTEXT           "Deceased",IDC_SFALLECIDO,6,255,103,13
+    LTEXT           "Type",IDC_STATIC,6,51,21,8
+END
+
+IDD_ESTUDIOSVIEW DIALOGEX 0, 0, 499, 347
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EPKZ,88,12,60,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EBECARIOOTRA,88,28,123,14,ES_AUTOHSCROLL
+    CONTROL         "DAAD Scholar",IDC_CBECARIO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,222,31,73,10
+    EDITTEXT        IDC_ECARRERA,76,51,161,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EUNIVERSIDAD,340,51,131,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EREVISTA,76,67,161,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CAPAREA,340,66,131,30,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_DTCOMIENZO1,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,105,94,71,15
+    CONTROL         "",IDC_DPFIN1,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,227,94,71,15
+    EDITTEXT        IDC_ETIPO1,334,94,137,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DPCOMIENZO2,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,105,110,71,15
+    CONTROL         "",IDC_DPFIN2,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,227,110,71,15
+    EDITTEXT        IDC_ETIPO2,334,110,137,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EAPREGRADO,88,140,174,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EAUNIVERSIDAD,314,140,157,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EAAPOSTGRADO,88,156,174,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EAPOSTUNIVERSIDAD,314,156,157,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EAMAESTRIA,88,172,174,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EAMUNIVERSIDAD,314,172,157,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EADOCTORADO,88,188,174,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EADUNIVERSIDAD,314,188,157,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EAOTROS,88,204,174,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EAOUNIVERSIDAD,314,204,157,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EFPREGRADO,89,240,125,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EFPUNIVERSIDAD,232,240,105,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EFPPAIS,345,240,126,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EFPOSTGRADO,89,255,125,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EFPOSTUNIVERSIDAD,232,255,105,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EFPOSTPAIS,345,255,126,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EFMAESTRIA,89,270,125,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EFMUNIVERSIDAD,232,270,105,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EFMPAIS,345,270,126,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EFDOCTORADO,89,286,125,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EFDUNIVERSIDAD,232,286,105,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EFDPAIS,345,286,126,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EFOTROS,89,302,125,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EFOUNIVERSIDAD,232,302,105,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EFOPAIS,345,302,126,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDC_BOK,361,326,50,14
+    PUSHBUTTON      "Clear",IDC_BCANCELAR,307,326,50,14
+    LTEXT           "PKZ",IDC_STATIC,14,15,15,8
+    LTEXT           "Study Program",IDC_STATIC,15,55,50,8
+    LTEXT           "University",IDC_STATIC,261,54,38,8
+    LTEXT           "1st Scholarship Begins",IDC_STATIC,19,98,76,8
+    LTEXT           "Ends ",IDC_STATIC,194,97,34,8
+    LTEXT           "DAAD Magazine",IDC_STATIC,15,69,55,8
+    GROUPBOX        "Education",IDC_STATIC,7,40,472,45
+    GROUPBOX        "Studies in Germany",IDC_STATIC,7,135,472,89
+    GROUPBOX        "Studies outside Germany",IDC_STATIC,7,229,472,94
+    CTEXT           "Deceased",IDC_SFALLECIDO,3,327,103,13
+    LTEXT           "Bachelor",IDC_STATIC,20,145,30,8
+    LTEXT           "Master",IDC_STATIC,20,176,29,8
+    LTEXT           "PhD",IDC_STATIC,20,193,34,8
+    LTEXT           "Other",IDC_STATIC,20,206,18,8
+    LTEXT           "Bachelor",IDC_STATIC,20,240,30,8
+    LTEXT           "Master",IDC_STATIC,20,271,29,8
+    LTEXT           "PhD",IDC_STATIC,20,287,34,8
+    LTEXT           "Other",IDC_STATIC,20,303,18,8
+    GROUPBOX        "Scholarship / grant",IDC_STATIC,7,85,472,44
+    LTEXT           "Type",IDC_STATIC,308,97,20,8
+    LTEXT           "Ends",IDC_STATIC,194,112,33,8
+    LTEXT           "2nd Scholarship Begins",IDC_STATIC,19,112,74,8
+    LTEXT           "Type",IDC_STATIC,308,111,19,8
+    LTEXT           "Other Scholarships ",IDC_STATIC,14,31,72,8
+    LTEXT           "Other  Grad Studies",IDC_STATIC,20,159,62,8
+    LTEXT           "Other Grad Studies",IDC_STATIC,20,255,64,8
+    LTEXT           "Area of Studies",IDC_STATIC,262,69,49,8
+    LTEXT           "University",IDC_STATIC,276,142,38,8
+    LTEXT           "University",IDC_STATIC,276,158,38,8
+    LTEXT           "University",IDC_STATIC,276,174,38,8
+    LTEXT           "University",IDC_STATIC,276,190,38,8
+    LTEXT           "University",IDC_STATIC,276,206,38,8
+END
+
+IDD_SEGUIMIENTOVIEW DIALOGEX 0, 0, 309, 195
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EPKZ,34,15,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DPRIMERO,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,14,43,67,15
+    EDITTEXT        IDC_EMPRIMERO,166,43,57,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DSEGUNDO,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,14,75,67,15
+    EDITTEXT        IDC_EMSEGUNDO,166,75,57,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DTERCERO,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,14,107,67,15
+    EDITTEXT        IDC_EMTERCERO,166,107,57,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DENCUESTA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,14,140,67,15
+    EDITTEXT        IDC_ERESPONDIO,166,140,57,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Clear",IDC_BCANCELAR,190,174,50,14
+    GROUPBOX        "First",IDC_STATIC,7,32,232,29
+    LTEXT           "PKZ",IDC_STATIC,14,18,15,8
+    LTEXT           "Way of Contact",IDC_STATIC,93,45,57,8
+    GROUPBOX        "Second",IDC_STATIC,7,64,232,29
+    LTEXT           "Way of Contact",IDC_STATIC,93,77,61,8
+    GROUPBOX        "Third",IDC_STATIC,7,96,232,29
+    LTEXT           "Way of Contact",IDC_STATIC,93,109,58,8
+    GROUPBOX        "Survey",IDC_STATIC,7,129,232,29
+    LTEXT           "Responded",IDC_STATIC,93,142,39,8
+    DEFPUSHBUTTON   "OK",IDC_BOK,244,174,50,14
+    CTEXT           "Deceased",IDC_SFALLECIDO,7,175,103,13
+END
+
+IDD_BUSQUEDAVIEW DIALOGEX 0, 0, 518, 239
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Search",IDC_SBUSQUEDA,7,7,464,8
+    LTEXT           "Name",IDC_STATIC,7,22,26,8
+    EDITTEXT        IDC_ENOMBRE,47,19,70,14,ES_AUTOHSCROLL
+    LTEXT           "Surnames",IDC_STATIC,122,22,35,8
+    EDITTEXT        IDC_EAPELLIDO,164,19,70,14,ES_AUTOHSCROLL
+    LTEXT           "Country",IDC_STATIC,242,22,25,8
+    COMBOBOX        IDC_CPAIS,271,20,80,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "City",IDC_STATIC,356,22,25,8
+    COMBOBOX        IDC_CBCIUDAD,395,20,100,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "University",IDC_STATIC,7,36,38,8
+    COMBOBOX        IDC_CBUNIVERSIDAD,48,35,186,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Area",IDC_STATIC,242,38,16,8
+    COMBOBOX        IDC_CAREA,271,35,80,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Institution",IDC_STATIC,7,52,33,8
+    EDITTEXT        IDC_EINTITUCION,48,49,186,14,ES_AUTOHSCROLL
+    LTEXT           "Type",IDC_STATIC,242,54,25,8
+    COMBOBOX        IDC_CTIPO,271,50,80,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "All Fields",IDC_CTODOS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,354,52,39,10
+    DEFPUSHBUTTON   "Search",IDC_BINDEXAR,395,50,50,14
+    PUSHBUTTON      "Clear",IDC_BCANCELAR,445,50,50,14
+    LTEXT           "Advanced",IDC_SAVANZADO,7,66,464,8
+    EDITTEXT        IDC_EBUSQUEDA,6,77,339,14,ES_AUTOHSCROLL
+    CONTROL         "All Fields",IDC_CTODOSA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,353,79,42,10
+    DEFPUSHBUTTON   "Search",IDC_BBUSCAR,395,77,50,14
+    PUSHBUTTON      "Clear",IDC_BCANCELAR2,445,77,50,14
+    LTEXT           "Results",IDC_SRESULTADOS,7,93,464,8
+    CONTROL         "",IDC_LRESULTADOS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,8,102,494,130
+END
+
+IDD_GESTIONVIEW DIALOGEX 0, 0, 311, 98
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EPKZ,34,15,40,14,ES_AUTOHSCROLL
+    CONTROL         "Updated On",IDC_CACTUALIZADO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,36,55,10
+    CONTROL         "Invalid Data",IDC_CINVALIDO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,50,69,10
+    EDITTEXT        IDC_EACTUALIZADOPOR,112,60,82,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ENOTAS,51,77,143,14,ES_MULTILINE | ES_AUTOVSCROLL
+    DEFPUSHBUTTON   "OK",IDC_BOK,254,77,50,14
+    PUSHBUTTON      "Clear",IDC_BCANCELAR,199,77,50,14
+    LTEXT           "Notes",IDC_STATIC,14,80,20,8
+    LTEXT           "PKZ",IDC_STATIC,14,18,15,8
+    LTEXT           "Updated By",IDC_STATIC,14,64,50,8
+    LTEXT           "",IDC_SACTUALIZACION,68,37,229,8
+    CTEXT           "Deceased",IDC_SFALLECIDO,201,7,103,13
+END
+
+IDD_USUARIODLG DIALOGEX 0, 0, 152, 49
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Login administrator"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EPASSWORD,56,7,89,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,20,26,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,80,26,50,16
+    LTEXT           "Password",IDC_STATIC,7,10,37,8
+END
+
+IDD_INDEXARDLG DIALOGEX 0, 0, 186, 27
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Indexando"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_PPROGRESOREAL,"msctls_progress32",WS_BORDER,7,7,172,14
+END
+
+IDD_AREASVIEW DIALOGEX 0, 0, 243, 155
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Area",IDC_SAREA,7,9,24,8
+    EDITTEXT        IDC_EAREA,39,7,91,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&Add",IDC_BAGREGAR,134,7,50,14
+    PUSHBUTTON      "&Cancel",IDC_BCANCELAR,186,7,50,14
+    CONTROL         "",IDC_LAREAS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,24,229,124
+END
+
+IDD_DACTUALIZADOPOR DIALOGEX 0, 0, 120, 46
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Updated by"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EACTUALIZADO,7,7,106,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,34,25,50,14
+END
+
+IDD_FLASHVIEW DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Do not show again",IDC_CNOMOSTRAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,238,7,75,10
+    CONTROL         "",IDC_SHOCKWAVEFLASH1,
+                    "{D27CDB6E-AE6D-11CF-96B8-444553540000}",WS_TABSTOP,7,7,92,49
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_TEMPLATE_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_RESIDENCIAVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_OFICINAVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 268
+    END
+
+    IDD_ESTUDIOSVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 479
+        VERTGUIDE, 471
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 340
+    END
+
+    IDD_SEGUIMIENTOVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+    END
+
+    IDD_BUSQUEDAVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 502
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_GESTIONVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_USUARIODLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 145
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_INDEXARDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 20
+    END
+
+    IDD_AREASVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 236
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+
+    IDD_DACTUALIZADOPOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 113
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_FLASHVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_FLASHVIEW DLGINIT
+BEGIN
+    IDC_SHOCKWAVEFLASH1, 0x376, 232, 0
+0x0000, 0x0000, 0x5567, 0x5566, 0x0710, 0x0000, 0x0e43, 0x0000, 0x0845, 
+0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 0x0008, 
+0x0000, 0x0000, 0x0008, 0x000e, 0x0000, 0x0057, 0x0069, 0x006e, 0x0064, 
+0x006f, 0x0077, 0x0000, 0x000b, 0xffff, 0x000b, 0xffff, 0x0008, 0x000a, 
+0x0000, 0x0048, 0x0069, 0x0067, 0x0068, 0x0000, 0x0008, 0x0002, 0x0000, 
+0x0000, 0x000b, 0xffff, 0x0008, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 
+0x0000, 0x0008, 0x0010, 0x0000, 0x0053, 0x0068, 0x006f, 0x0077, 0x0041, 
+0x006c, 0x006c, 0x0000, 0x000b, 0x0000, 0x000b, 0x0000, 0x0008, 0x0002, 
+0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 
+0x000d, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x000b, 0x0001, 0x000b, 0x0000, 0x0008, 0x0000, 0x0000, 0x0003, 0x0000, 
+0x0000, 0x0008, 0x0008, 0x0000, 0x0061, 0x006c, 0x006c, 0x0000, 0x0008, 
+0x000c, 0x0000, 0x0066, 0x0061, 0x006c, 0x0073, 0x0065, 0x0000, 
+    0
+END
+
+#endif    // Spanish (Colombia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Trinidad) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENT)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_TRINIDAD
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "Error at  OLE initialization. Make sure that OLE library  is rigth version."
+    IDS_BUSCANDO            "Searching"
+    IDS_BUSQUEDA            "Search"
+    IDS_PKZ                 "PKZ"
+    IDP_SOCKETS_INIT_FAILED "Error at Windows Sockets initialization ."
+    IDS_NOMBRE              "Name"
+    IDS_APELLIDO            "First Surename"
+    IDS_SAPELLIDO           "Second Surname"
+    IDS_TELEFONOCASA        "Phone Home"
+    IDS_TELEFONOOFICINA     "Phone Office"
+    IDS_TERMINOBUSQUEDA     "Insert the Search Term"
+    IDS_AREA                "Area"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Social Network Tool"
+    IDR_TemplateTYPE        "\nSNT\nSNT\n\n\nSNT.Document\nSNT.Document"
+    IDS_RESTART             "To Make Changes Restart Now %s,  ."
+    IDS_MASCULINO           "Male"
+    IDS_FEMENINO            "Female"
+    IDS_CASA                "Home"
+    IDS_SELECCIONSEXO       "Please Select the Gender"
+    IDS_SELECCIONCORRESPONDENCIA "Please Select Prefered Mail Address"
+    IDS_FORMATOANOS         "%d Years"
+    IDS_CONTRASENA          "ProspectaLTDA"
+    IDS_CONTRASENANOVALIDA  "Wrong Password "
+    IDS_EDUCACION           "Education"
+    IDS_SULTIMAACTUALIZACION "%s"
+    IDS_NOHAYAREAS          "No Areas"
+    IDS_EDITAR              "Edit"
+    IDS_ELIMINAR            "Delete"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "SNT"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "SOB"
+    ID_INDICATOR_REC        "GRB"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create new file \nNew"
+    ID_FILE_OPEN            "Open document \nOpen"
+    ID_FILE_CLOSE           "Close active document \nClose"
+    ID_FILE_SAVE            "Save active document \nSave"
+    ID_FILE_SAVE_AS         "Save active document as  \nSave as"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Show information about this program, number,version and copyright\nAbout "
+    ID_APP_EXIT             "Exit aplication; allow to save documents\nSalir"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Change to next window  \nNext tab"
+    ID_PREV_PANE            "Change to previous window  \nPrevious tab"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open new window \n New window"
+    ID_WINDOW_ARRANGE       "Sort icons at the bottom \nSort icons"
+    ID_WINDOW_CASCADE       "Organizar las ventanas para que se superpongan\nCascada"
+    ID_WINDOW_TILE_HORZ     "Mosaic\nMosaic"
+    ID_WINDOW_TILE_VERT     "Sort mosaic\n Sort mosaic"
+    ID_WINDOW_SPLIT         "Tile windows vertically\nVertically"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Delete selection \nDelete"
+    ID_EDIT_CLEAR_ALL       "Delete all \nDelete all"
+    ID_EDIT_COPY            "Copy selection and send it to clipboard \nCopy"
+    ID_EDIT_CUT             "Copy selection and send it to clipboard \nCut"
+    ID_EDIT_FIND            "Search specified text\nSearch"
+    ID_EDIT_PASTE           "Add to clipboard\nPaste"
+    ID_EDIT_REPEAT          "Repeat \nRepeat"
+    ID_EDIT_REPLACE         "Replace whith different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select all\nSelect all"
+    ID_EDIT_UNDO            "Undo\nUndo"
+    ID_EDIT_REDO            "Redo \nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_HERRAMIENTAS_ESPA32771 "Cambia el idioma actual a español"
+    ID_HERRAMIENTAS_GERMAN  "Wechseln Sie die Sprache auf Deutsch"
+    ID_HERRAMIENTAS_ENGLISH "Change the language to English"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show toolbars\nSwitch toolbars"
+    ID_VIEW_STATUS_BAR      "Show or hide statusbar\nSwitch statusbar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change window size"
+    AFX_IDS_SCMOVE          "Change window position"
+    AFX_IDS_SCMINIMIZE      "Collapse"
+    AFX_IDS_SCMAXIMIZE      "Maximize"
+    AFX_IDS_SCNEXTWINDOW    "Change to next window"
+    AFX_IDS_SCPREVWINDOW    "Change to previous window"
+    AFX_IDS_SCCLOSE         "Close window and ask to save changes"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore"
+    AFX_IDS_SCTASKLIST      "Task manager"
+    AFX_IDS_MDICHILD        "Activated this window"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_AREAS               "Areas"
+    IDS_NORESULTADOS        "not results found"
+    IDS_VERUSUARIO          "View &User"
+    IDS_RESULTADOS          "Results"
+    IDS_ESTUDIOS            "Studies"
+    IDS_UNIVERSIDAD         "University"
+    IDS_PAIS                "Country"
+    IDS_INSERTPKZ           "Por favor ingrese un PKZ."
+    IDS_GESTIONBASE         "Database Management"
+    IDS_NAVEGADOR           "Browser"
+    IDS_DATOS               "Data"
+    IDS_PERSONALES          "Personal Information"
+    IDS_RESIDENCIA          "Home Address"
+    IDS_OFICINA             "Office Address"
+    IDS_SEGUIMIENTO         "Follow-up"
+    IDS_ERRORMYSQL          "%s\r\n Failure while searching\\n%s"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_AGREGAR             "Add"
+    IDS_ESTASEGURODEELIMINAR "Are you sure you want to delete  '%s'."
+    IDS_IMPORTANDO          "Importing"
+    IDS_NOSEENCONTROELCAMPOLLAMADO "Field  Not Found  '%s'"
+    IDS_NOSEENCONTROPKZ     "Column not found 'PKZ'."
+    IDS_IMPORTACIONTERMINADA "Imported %d lines."
+    IDS_TIPODEIMPORTACION   "Comma Separated Values (*.csv)|*.csv|All files (*.*)|*.*||"
+    IDS_ERRORENLINEA        "Error in line %d"
+    IDS_NOSEPUEDECARGARARCHIVO "This file can not be read  '%s'"
+    IDS_TIPOS               "Type of Institution"
+    IDS_TIPO                "Type"
+    IDS_NOHAYTIPO           "No Types"
+    IDS_NOAPLICA            "N/A"
+    IDS_ERRORACTUALIZANDO   "This is a mandatory field "
+    IDS_STODOS              "(All)"
+    IDS_STODAS              "(All)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SVERSION            "Version %s"
+    IDS_SEXONOENCONTRADO    "Error in line %d gender '%s' not found.\r\n Possible values: %s,%s,%s"
+    IDS_DESTINONOENCONTRADO "Error in line %d mail address   '%s' not found.\r\n Possible values: %s,%s,%s"
+    IDS_TIPODEEMPRESANOENCONTRADO 
+                            "Type of institution  '%s' in line %d. Does not exist, Do you want to add it to database?."
+    IDS_AREANOENCONTRADA    "Area  '%s' in line %d. Does not exist, Do you want to add it to database?."
+    IDS_ALIAS               "extras\\alias.xml"
+    IDS_VERPERSONALES       "&View Personal information"
+    IDS_VERRESIDENCIA       "View &Home Address"
+    IDS_VEROFICINA          "View &Office Address"
+    IDS_VEREDUCACION        "View &Education"
+    IDS_VERSEGUIMIENTO      "View &Follow-up"
+    IDS_VERGESTION          "View &Data Management"
+    IDS_NACIONALIDAD        "Nationality"
+    IDS_PAISDERESIDENCIA    "Country of Residence"
+    IDS_CIUDADRESIDENCIA    "City of Residence"
+    IDS_POSTGRADO           "Studies"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BIENVENIDO          "Welcome"
+END
+
+#endif    // English (Trinidad) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESO)
+LANGUAGE 10, 9
+#pragma code_page(1252)
+#include "res\Template.rc2"  // recursos editados que no son de Microsoft Visual C++
+#include "afxres.rc"         // Componentes estándar
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
