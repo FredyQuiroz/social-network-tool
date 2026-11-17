@@ -8,7 +8,7 @@ Aplicación de escritorio para organizar fichas personales y volver a encontrar 
 
 ### Esta revisión
 
-**2009-05-13 · Organizar y buscar fichas de personas.** Recupera pantallas de perfiles, estudios, oficina, residencia y búsqueda. Centraliza esas facetas de una ficha para que se pueda localizar y consultar cuando haya que hacer seguimiento.
+**2026-11-17 · Documentar las dependencias de la aplicación de perfiles.** Identifica las referencias de Visual C++ y los recursos gráficos que esperan las pantallas. Esto permite preparar el entorno necesario para revisar la interfaz de perfiles.
 
 ### Cómo explorar el código
 
@@ -25,7 +25,7 @@ A desktop application for organizing personal profiles and finding information a
 
 ### This revision
 
-**2009-05-13 · Organize and find people’s profiles.** Recover the profile, education, office, residence, and search screens. Bring those facets into one record that can be found and reviewed when follow-up is needed.
+**2026-11-17 · Document the desktop profile app dependencies.** Identify the Visual C++ references and graphics expected by the screens. This helps readers prepare the environment needed to review the profile interface.
 
 ### How to explore the source
 
